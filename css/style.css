@@ -1,0 +1,127 @@
+/* *** *** *** Custom Properties *** *** *** */
+@font-face {
+    font-family: "Figtree Italic";
+    src: url(../assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Figtree";
+    src: url(../assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+:root {
+    --font-family: "Figtree";
+    --font-family-italic: "Figtree Italic";
+    --font-size: 16px; /* 1rem = 16px */
+    --font-size-paragraph: 16px;
+    --color-yellow: hsl(47, 88%, 63%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-grey: hsl(0, 0%, 50%);
+    --color-black: hsl(0, 0%, 7%);
+}
+
+/* *** *** *** Reset *** *** *** */
+html {
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+*, *:before, *:after { box-sizing: inherit; }
+
+h1, h2, h3, h4, h5, h6, p { margin: 0; }
+
+a { text-decoration: none; }
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+picture { display: block; }
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+hr {
+    border-left-width: 0;
+    border-right-width: 0;
+}
+
+/* *** *** *** Components *** *** *** */
+/* *** Components / Blog Preview Card *** */
+.blog-preview-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: min-content;
+    padding: 1.5rem;
+    border: 2px solid var(--color-black);
+    border-radius: 20px;
+    background-color: var(--color-white);
+    box-shadow: 9px 9px var(--color-black);
+}
+
+.blog-preview-card-img { 
+    max-width: none; 
+    border-radius: 15px;
+}
+
+.blog-preview-card-status {
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: var(--color-yellow);
+}
+
+.blog-preview-card-title { font-size: 1.5rem; }
+
+.blog-preview-card-content {
+    line-height: 1.5rem;
+    color: var(--color-grey);
+}
+
+.blog-preview-card-user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.blog-preview-card-user-img { width: 40px; }
+
+.blog-preview-card-user-name {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* *** *** *** Site Styles *** *** *** */
+#root {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color-yellow);
+}
+
+.main { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; 
+}
+
+.footer { padding: 1rem; } 

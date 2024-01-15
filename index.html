@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | Blog preview card</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .attribution { font-size: 11px; text-align: center; }
+        .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <div id="root">
+        <main id="main" class="main"></main>
+        <footer class="footer attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="https://github.com/danieldampe" target="_blank">danieldampe</a>.
+        </footer>
+    </div>
+    <!-- Blog Preview Card -->
+    <template id="blog-preview-card">
+        <div class="blog-preview-card">
+            <img class="blog-preview-card-img">
+            <div class="blog-preview-card-status"></div>
+            <div class="blog-preview-card-date"></div>
+            <h6 class="blog-preview-card-title"></h6>
+            <p class="blog-preview-card-content"></p>
+            <div class="blog-preview-card-user">
+                <img class="blog-preview-card-user-img">
+                <span class="blog-preview-card-user-name"></span>
+            </div>
+        </div>
+    </template>
+    <!-- JS -->
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>
